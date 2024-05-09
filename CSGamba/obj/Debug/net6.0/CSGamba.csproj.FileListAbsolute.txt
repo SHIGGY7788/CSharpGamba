@@ -1,0 +1,15 @@
+/home/ejedw838/Desktop/CSharpGamba/CSGamba/bin/Debug/net6.0/CSGamba
+/home/ejedw838/Desktop/CSharpGamba/CSGamba/bin/Debug/net6.0/CSGamba.deps.json
+/home/ejedw838/Desktop/CSharpGamba/CSGamba/bin/Debug/net6.0/CSGamba.runtimeconfig.json
+/home/ejedw838/Desktop/CSharpGamba/CSGamba/bin/Debug/net6.0/CSGamba.dll
+/home/ejedw838/Desktop/CSharpGamba/CSGamba/bin/Debug/net6.0/CSGamba.pdb
+/home/ejedw838/Desktop/CSharpGamba/CSGamba/obj/Debug/net6.0/CSGamba.csproj.AssemblyReference.cache
+/home/ejedw838/Desktop/CSharpGamba/CSGamba/obj/Debug/net6.0/CSGamba.GeneratedMSBuildEditorConfig.editorconfig
+/home/ejedw838/Desktop/CSharpGamba/CSGamba/obj/Debug/net6.0/CSGamba.AssemblyInfoInputs.cache
+/home/ejedw838/Desktop/CSharpGamba/CSGamba/obj/Debug/net6.0/CSGamba.AssemblyInfo.cs
+/home/ejedw838/Desktop/CSharpGamba/CSGamba/obj/Debug/net6.0/CSGamba.csproj.CoreCompileInputs.cache
+/home/ejedw838/Desktop/CSharpGamba/CSGamba/obj/Debug/net6.0/CSGamba.dll
+/home/ejedw838/Desktop/CSharpGamba/CSGamba/obj/Debug/net6.0/refint/CSGamba.dll
+/home/ejedw838/Desktop/CSharpGamba/CSGamba/obj/Debug/net6.0/CSGamba.pdb
+/home/ejedw838/Desktop/CSharpGamba/CSGamba/obj/Debug/net6.0/CSGamba.genruntimeconfig.cache
+/home/ejedw838/Desktop/CSharpGamba/CSGamba/obj/Debug/net6.0/ref/CSGamba.dll

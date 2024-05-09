@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "n9GsnqPM7aPSQby4XWYL2LFRMMGsOV3DhQbHN3HJ3LoFKVu60GKXeVi/UVcmFI8Qs4i6IA0C8cRaY9viKLWjbQ==",
+  "success": true,
+  "projectFilePath": "/home/ejedw838/Desktop/CSharpGamba/CSGamba/CSGamba.csproj",
+  "expectedPackageFiles": [
+    "/home/ejedw838/.nuget/packages/microsoft.netcore.app.ref/6.0.8/microsoft.netcore.app.ref.6.0.8.nupkg.sha512",
+    "/home/ejedw838/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.8/microsoft.aspnetcore.app.ref.6.0.8.nupkg.sha512",
+    "/home/ejedw838/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.8/microsoft.netcore.app.host.linux-x64.6.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}
