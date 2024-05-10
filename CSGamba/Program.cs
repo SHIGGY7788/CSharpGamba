@@ -4,6 +4,87 @@ namespace CSGamba
 {
     class Program
     {
+
+        static double Beg(double balance)
+        {
+            Console.Clear();
+            Console.WriteLine("How should we beg today?");
+            Console.WriteLine("1: Ask a friend");
+            Console.WriteLine("2: Ask Family");
+            Console.WriteLine("3: Steal the moner");
+            
+            int begType = int.Parse(Console.ReadLine());
+            Console.Clear();
+            
+            switch (begType)
+            {
+                
+                case 1:
+                    Console.WriteLine("Your call your friend asking for money");
+                    System.Threading.Thread.Sleep(1000);
+                    Random friendChance = new Random();
+                    string[] friendResponse = { "yes", "no" };
+                    int friendAnswer = friendChance.Next(0, friendResponse.Length);
+                    if (friendAnswer == 0)
+                    {
+                        Console.WriteLine("he gives you $25");
+                        balance = balance + 25;
+                        Console.WriteLine($"Your new balance is {balance}");
+                    } 
+                    if (friendAnswer == 1)
+                    {
+                        Console.WriteLine("He doesn't like gambaling, no $$");
+                    }
+                    return (balance);
+                
+                
+                case 2:
+                    Console.WriteLine("You approach your family for gambling money");
+                    System.Threading.Thread.Sleep(1000);
+                    Console.WriteLine("Your family doesn't support your gambling addiction");
+                    System.Threading.Thread.Sleep(1000);
+                    Console.WriteLine("They kick you out bcz gambling is bad :(");
+                    return balance;
+                
+                case 3:
+                    Console.WriteLine("You decide to formulate a heist");
+                    Console.WriteLine("Where should we robbery?");
+                    Console.WriteLine("1: Gas station");
+                    Console.WriteLine("2: Walmart");
+                    Console.WriteLine("3: Zumiez");
+                    Console.WriteLine("4: The Casino!!!!");
+                    
+                    int heistChoice = int.Parse(Console.ReadLine());
+                    Console.Clear();
+                    switch (heistChoice)
+                    {
+                        case 1:
+                            Console.WriteLine("You decide to rob a gas station");
+                            System.Threading.Thread.Sleep(1000);
+                            Console.WriteLine("You ask the man for all the money");
+                            System.Threading.Thread.Sleep(1000);
+                            Random GasStationRobChance = new Random();
+
+                            int GasStationOutcome = GasStationRobChance.Next(0, 10);
+
+                            if (GasStationOutcome >= 7)
+                            {
+                                System.Threading.Thread.Sleep(1000);
+                                Console.WriteLine();
+                            }
+                            
+                            
+                            
+                            
+                            
+                    }
+                    
+
+                    
+            }
+
+            return balance;
+        }
         static double Slots(double balance)
         {
             Console.Clear();
@@ -67,6 +148,11 @@ namespace CSGamba
                     Console.WriteLine("You chose slots!!! hooray!");
                     balance = Slots(balance);
                     break;
+                
+                case 9:
+                    Console.WriteLine("Lets go beg!");
+                    balance = Beg(balance);
+                    break;
                 default:
                     Console.WriteLine("Invalid game choice.");
                     break;
@@ -77,7 +163,7 @@ namespace CSGamba
 
         static void Main(string[] args)
         {
-            double balance = 0.01;
+            double balance = 500;
             Console.WriteLine("--Welcome To the Casino--");
             Console.WriteLine($"Your initial Balance is {balance}");
 
