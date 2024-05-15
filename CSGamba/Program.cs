@@ -66,18 +66,42 @@ namespace CSGamba
                             Random GasStationRobChance = new Random();
 
                             int GasStationOutcome = GasStationRobChance.Next(0, 10);
-
+                            
+                            Console.WriteLine(GasStationOutcome);
                             if (GasStationOutcome >= 7)
                             {
                                 System.Threading.Thread.Sleep(1000);
-                                Console.WriteLine();
+                                Console.WriteLine("The man gives you the money!");
+                                Console.WriteLine("You successfully robbed the gas station!");
+                                Random GasStationReward = new Random();
+
+                                int GasStationRewardAmount = GasStationReward.Next(400, 1200);
+                                
+                                Console.WriteLine($"You stole {GasStationRewardAmount}");
+
+                                balance = balance + GasStationRewardAmount;
+                                System.Threading.Thread.Sleep(1000);
+                                return balance;
                             }
+                            if (GasStationOutcome < 7)
+                            {
+                                System.Threading.Thread.Sleep(1000);
+                                Console.WriteLine("You got caught by the police. Womp Womp");
+                                Console.WriteLine("You lose all your money and get 5 years for robbery");
+                                balance = 0;
+                                System.Threading.Thread.Sleep(1000);
+                                return balance;
+                            }
+
+                            break;
                             
                             
                             
                             
                             
                     }
+
+                    break;
                     
 
                     
@@ -138,8 +162,10 @@ namespace CSGamba
         static double PickGame(double balance)
         {
             Console.Clear();
-            Console.WriteLine("What game do you want to play?");
+            Console.WriteLine($"Your balance is {balance}");
+            Console.WriteLine("What do you want to do?");
             Console.WriteLine("1: Slots");
+            Console.WriteLine("9: Earn Moner");
             string choice = Console.ReadLine();
             int option = int.Parse(choice);
             switch (option)
@@ -170,7 +196,26 @@ namespace CSGamba
             bool running = true;
             while (running)
             {
-                balance = PickGame(balance); // Update balance after each game
+                if (balance > 0)
+                {
+                    balance = PickGame(balance); // Update balance after each game
+                }
+
+                if (balance == 0)
+                {
+                    Console.WriteLine("You are out of money, do you want to get more? (y/n)");
+                    string playAgain2 = Console.ReadLine().ToLower();
+                    if (playAgain2 == "n")
+                    {
+                        System.Environment.Exit(1);
+                    }
+                    if (playAgain2 == "y")
+                    {
+                        balance = Beg(balance);
+                    }
+
+                    continue;
+                }
                 Console.WriteLine("Would you like to play again? (y/n)");
                 string playAgain = Console.ReadLine().ToLower();
                 if (playAgain != "y")
